@@ -1,0 +1,35 @@
+<layout id="WatchFace">
+    <drawable class="Background" />
+
+	<drawable id="ticksWidget" class="TicksWidget">
+	</drawable>
+
+    <drawable id="timeWidget" class="TimeWidget">
+		<param name="x">210</param>
+		<param name="y">235</param>
+	</drawable>
+
+	<drawable id="stepsWidget" class="StepsWidget">
+		<param name="x">110</param>
+		<param name="y">90</param>
+		<param name="r">35</param>
+	</drawable>
+
+	<drawable id="batteryWidget" class="BatteryWidget">
+		<param name="x">210</param>
+		<param name="y">70</param>
+		<param name="r">60</param>
+	</drawable>
+
+	<drawable id="floorsWidget" class="FloorsWidget">
+		<param name="x">310</param>
+		<param name="y">90</param>
+		<param name="r">35</param>
+	</drawable>
+
+    <drawable id="dateWidget" class="DateWidget">
+		<param name="x">385</param>
+		<param name="y">210</param>    
+    </drawable>
+
+</layout>

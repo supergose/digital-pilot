@@ -1,0 +1,9 @@
+<fonts>
+	<font id="HoursFont" filename="Unnamed.fnt" antialias="true"/>
+	<font id="MinutesFont" filename="Unnamed.fnt" antialias="true"/>
+
+	<font id="MicroFont" filename="envy-18_32bit.fnt" antialias="true"/>
+	
+	<font id="IconsFont" filename="icons-22.fnt" antialias="true"/>
+	<font id="IconsFontBig" filename="icons-24.fnt" antialias="true"/>
+</fonts>
