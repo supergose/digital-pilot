@@ -4,7 +4,7 @@
 
 ## The Project
 
-Develop a Pilot style WatchFace with big digital time box.
+An Open Source Pilot style WatchFace with big digital time box.
 
 ## Compatible Devices
 
