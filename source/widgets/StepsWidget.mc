@@ -36,9 +36,12 @@ class StepsWidget extends Ui.Drawable {
 			
 			dc.drawText(_x+2, _y-10, font, steps, Graphics.TEXT_JUSTIFY_CENTER);
 			dc.setColor(Gfx.COLOR_DK_RED, Graphics.COLOR_TRANSPARENT);
-			dc.setPenWidth(3);
-			dc.drawArc(_x, _y, _r, Graphics.ARC_COUNTER_CLOCKWISE, 0, 360*stepsPercentage);
-			dc.setPenWidth(1);
+			
+			if (stepsPercentage > 0) {
+				dc.setPenWidth(3);
+				dc.drawArc(_x, _y, _r, Graphics.ARC_COUNTER_CLOCKWISE, 0, 360*stepsPercentage);
+				dc.setPenWidth(1);
+			}
 		}
 	}
 

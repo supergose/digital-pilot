@@ -33,9 +33,12 @@ class FloorsWidget extends Ui.Drawable {
 			
 			dc.drawText(_x+2, _y-10, font, floors, Graphics.TEXT_JUSTIFY_CENTER);
 			dc.setColor(Gfx.COLOR_DK_RED, Graphics.COLOR_TRANSPARENT);
-			dc.setPenWidth(3);
-			dc.drawArc(_x, _y, _r, Graphics.ARC_COUNTER_CLOCKWISE, 0, 360*floorsPercentage);
-			dc.setPenWidth(1);
+			
+			if (floorsPercentage > 0) {
+				dc.setPenWidth(3);
+				dc.drawArc(_x, _y, _r, Graphics.ARC_COUNTER_CLOCKWISE, 0, 360*floorsPercentage);
+				dc.setPenWidth(1);
+			}
 		}
 	}
 
