@@ -18,7 +18,7 @@
 	<drawable id="batteryWidget" class="BatteryWidget">
 		<param name="x">210</param>
 		<param name="y">70</param>
-		<param name="r">60</param>
+		<param name="r">55</param>
 	</drawable>
 
 	<drawable id="floorsWidget" class="FloorsWidget">
