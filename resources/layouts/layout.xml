@@ -18,7 +18,7 @@
 	<drawable id="batteryWidget" class="BatteryWidget">
 		<param name="x">210</param>
 		<param name="y">70</param>
-		<param name="r">55</param>
+		<param name="r">45</param>
 	</drawable>
 
 	<drawable id="floorsWidget" class="FloorsWidget">
@@ -31,5 +31,14 @@
 		<param name="x">385</param>
 		<param name="y">210</param>    
     </drawable>
+
+	<drawable id="heartWidget" class="HeartWidget">
+		<param name="x">160</param>
+		<param name="y">330</param>
+	</drawable>
+	<drawable id="altitudeWidget" class="AltitudeWidget">
+		<param name="x">250</param>
+		<param name="y">330</param>
+	</drawable>
 
 </layout>

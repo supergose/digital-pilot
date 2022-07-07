@@ -35,24 +35,34 @@ class TimeWidget extends Ui.Drawable {
         }
     
     	hours = hours.format("%02d");
-        
-        dc.setColor(hoursColor, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(
-			_x,
-			_y,
-			hoursFont,
-			hours,
-			Graphics.TEXT_JUSTIFY_RIGHT | Graphics.TEXT_JUSTIFY_VCENTER
-		);
-		
-        dc.setColor(Gfx.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(
-			_x,
-			_y,
-			minutesFont,
-			mins,
-			Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER
-		);
+        if (!App.getApp().isSleeping) {
+			dc.setColor(hoursColor, Graphics.COLOR_TRANSPARENT);
+			dc.drawText(
+				_x,
+				_y,
+				hoursFont,
+				hours,
+				Graphics.TEXT_JUSTIFY_RIGHT | Graphics.TEXT_JUSTIFY_VCENTER
+			);
+			
+			dc.setColor(Gfx.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
+			dc.drawText(
+				_x,
+				_y,
+				minutesFont,
+				mins,
+				Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER
+			);
+		} else {
+			dc.setColor(Gfx.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
+			dc.drawText(
+				_x,
+				_y,
+				Gfx.FONT_LARGE,
+				hours + " " + mins,
+				Graphics.TEXT_JUSTIFY_CENTER
+			);
+		}
 /*
 		dc.setColor(Gfx.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
 		dc.drawCircle(210, 70, 60);

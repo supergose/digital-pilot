@@ -4,6 +4,9 @@ import Toybox.Lang;
 import Toybox.System;
 import Toybox.WatchUi;
 
+const INTEGER_FORMAT = "%d";
+var isSleeping = false;
+
 class digitalPilotView extends WatchUi.WatchFace {
 
     function initialize() {
@@ -58,10 +61,14 @@ class digitalPilotView extends WatchUi.WatchFace {
 
     // The user has just looked at their watch. Timers and animations may be started here.
     function onExitSleep() as Void {
+        isSleeping = false;
+        WatchUi.requestUpdate();
     }
 
     // Terminate any active timers and prepare for slow updates.
     function onEnterSleep() as Void {
+        isSleeping = true;
+        WatchUi.requestUpdate();
     }
 
 }
